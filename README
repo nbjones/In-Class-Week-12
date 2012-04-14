@@ -1,0 +1,28 @@
+#include process.h
+#include <iostream>
+
+using namespace std;
+
+
+class Process
+{
+
+public:
+
+    Process myproc(char* args)
+        :str(NULL),
+       args(args);
+{
+    str = new char args;
+}
+
+~Process myproc(){
+ delete [] str;
+};
+
+private:
+
+char* str;
+char* args;
+
+}
